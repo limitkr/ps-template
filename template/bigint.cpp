@@ -88,7 +88,7 @@ struct UnsignedBigInt {
     return *this;
   }
 
-  UnsignedBigInt &operator=(long long x) {
+  UnsignedBigInt &operator=(ll x) {
     for (int i = 0; i <= len; i++)
       data[i] = 0;
     len = 0;
@@ -105,10 +105,10 @@ struct UnsignedBigInt {
   UnsignedBigInt operator-=(const UnsignedBigInt &b) { return *this = *this - b; }
   UnsignedBigInt operator/=(const UnsignedBigInt &b) { return *this = *this / b; }
   UnsignedBigInt operator%=(const UnsignedBigInt &b) { return *this = *this % b; }
-  UnsignedBigInt operator*=(long long x) { return *this = *this * x; }
-  UnsignedBigInt operator+=(long long x) { return *this = *this + x; }
-  UnsignedBigInt operator-=(long long x) { return *this = *this - x; }
-  UnsignedBigInt operator/=(long long x) { return *this = *this / x; }
+  UnsignedBigInt operator*=(ll x) { return *this = *this * x; }
+  UnsignedBigInt operator+=(ll x) { return *this = *this + x; }
+  UnsignedBigInt operator-=(ll x) { return *this = *this - x; }
+  UnsignedBigInt operator/=(ll x) { return *this = *this / x; }
 
   UnsignedBigInt operator*(const UnsignedBigInt &x) const {
     auto res = UnsignedBigInt(0LL);
