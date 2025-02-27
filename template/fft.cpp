@@ -3,8 +3,6 @@ using namespace std;
 
 using ll = long long;
 
-#define vt vector
-
 // FFT
 namespace FFT {
 struct cmpl {
@@ -20,8 +18,8 @@ inline cmpl operator*(cmpl a, cmpl b) {
 }
 
 int base = 1;
-vt<cmpl> roots = {{0, 0}, {1, 0}};
-vt<int> rev = {0, 1};
+vector<cmpl> roots = {{0, 0}, {1, 0}};
+vector<int> rev = {0, 1};
 const double PI = static_cast<double>(acosl(-1.0));
 
 void ensure_base(const int nbase) {
@@ -44,7 +42,7 @@ void ensure_base(const int nbase) {
   }
 }
 
-void fft(vt<cmpl> &a, int n = -1) {
+void fft(vector<cmpl> &a, int n = -1) {
   if (n == -1)
     n = static_cast<int>(a.size());
 
@@ -67,9 +65,9 @@ void fft(vt<cmpl> &a, int n = -1) {
   }
 }
 
-vt<cmpl> fa, fb;
+vector<cmpl> fa, fb;
 
-vt<ll> square(const vt<int> &a) {
+vector<ll> square(const vector<int> &a) {
   if (a.empty())
     return {};
 
@@ -100,7 +98,7 @@ vt<ll> square(const vt<int> &a) {
     fa[j] = r * (aux + cmpl(0, 2) * tmp);
   }
   fft(fa, sz >> 1);
-  vt<ll> res(need);
+  vector<ll> res(need);
   for (int i = 0; i < need; i++)
     res[i] = llround(i % 2 == 0 ? fa[i >> 1].x : fa[i >> 1].y);
 
@@ -108,7 +106,7 @@ vt<ll> square(const vt<int> &a) {
 }
 
 // interface
-vt<ll> multiply(const vt<int> &a, const vt<int> &b) {
+vector<ll> multiply(const vector<int> &a, const vector<int> &b) {
   if (a.empty() || b.empty())
     return {};
   if (a == b)
@@ -143,14 +141,14 @@ vt<ll> multiply(const vt<int> &a, const vt<int> &b) {
     fa[i] = A0 + A1 * cmpl(0, 1);
   }
   fft(fa, sz >> 1);
-  vt<ll> res(need);
+  vector<ll> res(need);
   for (int i = 0; i < need; i++)
     res[i] = llround(i % 2 == 0 ? fa[i >> 1].x : fa[i >> 1].y);
 
   return res;
 }
 
-vt<int> multiply_mod(const vt<int> &a, const vt<int> &b, const int m) {
+vector<int> multiply_mod(const vector<int> &a, const vector<int> &b, const int m) {
   if (a.empty() || b.empty())
     return {};
 
@@ -208,7 +206,7 @@ vt<int> multiply_mod(const vt<int> &a, const vt<int> &b, const int m) {
   }
   fft(fa, sz);
   fft(fb, sz);
-  vt<int> res(need);
+  vector<int> res(need);
   for (int i = 0; i < need; i++) {
     const ll aa = llround(fa[i].x);
     const ll bb = llround(fb[i].x);
