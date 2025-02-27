@@ -9,7 +9,6 @@
   
   - [Ordered Set](https://github.com/limitkr/ps-template/blob/main/template/__gnu_pbds/ordered_set.cpp)
   - [Trie](https://github.com/limitkr/ps-template/blob/main/template/__gnu_pbds/trie.cpp)
-  - [Interactive Runner](https://github.com/cheran-senthil/PyRival/blob/master/pyrival/tools/interactive_runner.py)
 </details>
 
 <details>
