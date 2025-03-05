@@ -18,19 +18,25 @@
   - [Fenwick Tree(Struct Ver.)](https://github.com/limitkr/ps-template/blob/main/template/data_structures/fenwick_tree(struct).cpp)
 </details>
 
+### Algorithms
+<details>
+  <summary>Mathematics</summary>
+
+  - [Miller Rabin](https://github.com/limitkr/ps-template/blob/main/template/miller_rabin.cpp)
+  - [Fast Fourier Transform](https://github.com/limitkr/ps-template/blob/main/template/fft.cpp)
+  - [Pollard Rho](https://github.com/limitkr/ps-template/blob/main/template/pollard_rho.cpp)
+  - [GCD](https://github.com/limitkr/ps-template/blob/main/template/gcd.cpp)
+</details>
+
 #### Not Categorized
 - [BigInt](https://github.com/limitkr/ps-template/blob/main/template/bigint.cpp)
 - [Convex Hull](https://github.com/limitkr/ps-template/blob/main/template/convex_hull.cpp)
 - [Euler Totient](https://github.com/limitkr/ps-template/blob/main/template/euler_totient.cpp)
 - [Fast Fibonacci](https://github.com/limitkr/ps-template/blob/main/template/fast_fibo.cpp)
 - [Fast Pow](https://github.com/limitkr/ps-template/blob/main/template/fast_pow.cpp)
-- [Fast Fourier Transform](https://github.com/limitkr/ps-template/blob/main/template/fft.cpp)
-- [GCD](https://github.com/limitkr/ps-template/blob/main/template/gcd.cpp)
 - [Knuth-Morris-Pratt](https://github.com/limitkr/ps-template/blob/main/template/kmp.cpp)
 - [lcp](https://github.com/limitkr/ps-template/blob/main/template/lcp.cpp)
-- [Miller Rabin](https://github.com/limitkr/ps-template/blob/main/template/miller_rabin.cpp)
 - [Multi Dimensional Vector](https://github.com/limitkr/ps-template/blob/main/template/multi_dimensional_vector.cpp)
-- [Pollard Rho](https://github.com/limitkr/ps-template/blob/main/template/pollard_rho.cpp)
 - [Segmented Sieve(v1)](https://github.com/limitkr/ps-template/blob/main/template/segmented_sieve.cpp)
 - [Segmented Sieve(v2)](https://github.com/limitkr/ps-template/blob/main/template/segmented_sieve_v2.cpp)
 - [Suffix Array](https://github.com/limitkr/ps-template/blob/main/template/suffix_array.cpp)
